@@ -1,0 +1,30 @@
+{
+  "name": "grpc-everywhere",
+  "version": "0.0.3",
+  "description": "GRPC server for everywehre and everyone",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shumkov/grpc-everywhere.git"
+  },
+  "main": ".bin/server.js",
+  "bin": {
+    "grpc-everywhere": "./bin/server.js"
+  },
+  "author": "Ivan Shumkov <ivan@shumkov.ru>",
+  "license": "MIT",
+  "engines": {
+    "node": "=>4.4.7"
+  },
+  "dependencies": {
+    "asciify": "^1.3.5",
+    "es6-error": "^3.0.1",
+    "fastcgi-client": "0.0.1",
+    "glob": "^7.1.2",
+    "grpc": "^1.3.9",
+    "ip": "^1.1.3",
+    "js-yaml": "^3.8.4",
+    "object.values": "^1.0.3",
+    "winston": "^2.2.0",
+    "yargs": "^4.8.1"
+  }
+}
