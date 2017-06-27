@@ -1,15 +1,7 @@
 # GRPC Everywhere
-GRPC server for everywhere and everyone
+GRPC server for everywhere and everyone.
 
-# Configure
-
-# Example
-
-# Start
-
-```bash
-docker run -v ./configs shumkov/grpc-everywhere
-```
+Documentation will be soon, please check `example` dir.
 
 ## MIT License
 
