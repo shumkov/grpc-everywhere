@@ -1,7 +1,11 @@
 # GRPC Everywhere
 GRPC server for everywhere and everyone.
 
-Documentation will be soon, please check `example` dir.
+Documentation will be soon.
+
+Please check:
+ - `example` dir.
+ - [GRPC Everywhere for PHP](https://github.com/shumkov/grpc-everywhere-php)
 
 ## MIT License
 
