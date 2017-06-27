@@ -1,0 +1,19 @@
+version: '2'
+services:
+  php:
+    image: php:fpm
+    volumes:
+      - ${PWD}/php:/app
+    working_dir: /app
+  grpc-everywhere:
+    image: shumkov/grpc-everywhere
+    volumes:
+      - "./configs/test.yml:/etc/grpc-everywhere/services/test.yml"
+      - "./test.proto:/etc/grpc-everywhere/services/test.proto"
+  grpc-client:
+    image: shumkov/grpc-everywhere
+    depends_on:
+      - grpc-everywhere
+    command: node /usr/local/lib/node_modules/grpc-everywhere/example/client.js
+    volumes:
+      - "${PWD}:/usr/local/lib/node_modules/grpc-everywhere/example"

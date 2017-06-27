@@ -1,0 +1,17 @@
+name: test
+protoFile: /etc/grpc-everywhere/services/test.proto
+service: test.greeter.Greeter
+logs:
+  - name: 'all'
+    type: 'File'
+    filename: /var/log/grpc-everywhere/test.log
+    level: 'info'
+  - name: 'error'
+    type: 'File'
+    filename: /var/log/grpc-everywhere/test.error.log
+    level: 'warn'
+connector:
+  name: FastCgi
+  options:
+    script: /app/test.php
+    host: php
